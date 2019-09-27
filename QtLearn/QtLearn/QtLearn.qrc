@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/QtLearn"/>
+    <qresource prefix="/image">
+        <file alias="Image1">Resources/1.png</file>
+    </qresource>
+</RCC>

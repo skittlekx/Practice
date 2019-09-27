@@ -1,0 +1,11 @@
+﻿  Folder.cpp
+c:\users\skittle\source\repos\zlibtest\zlibtest\folder.cpp(78): warning C4244: “=”: 从“intptr_t”转换到“long”，可能丢失数据
+c:\users\skittle\source\repos\zlibtest\zlibtest\folder.cpp(248): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\skittle\source\repos\zlibtest\zlibtest\folder.cpp(287): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\skittle\source\repos\zlibtest\zlibtest\folder.cpp(338): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\skittle\source\repos\zlibtest\zlibtest\folder.cpp(366): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\skittle\source\repos\zlibtest\zlibtest\folder.cpp(310): warning C4715: “Folder::SearchFolder”: 不是所有的控件路径都返回值
+c:\users\skittle\source\repos\zlibtest\zlibtest\folder.cpp(267): warning C4715: “Folder::SearchFile”: 不是所有的控件路径都返回值
+c:\users\skittle\source\repos\zlibtest\zlibtest\folder.cpp(361): warning C4715: “Folder::AddFile”: 不是所有的控件路径都返回值
+c:\users\skittle\source\repos\zlibtest\zlibtest\folder.cpp(401): warning C4715: “Folder::AddFolder”: 不是所有的控件路径都返回值
+  ZlibTest.vcxproj -> C:\Users\skittle\source\repos\ZlibTest\x64\Debug\ZlibTest.exe

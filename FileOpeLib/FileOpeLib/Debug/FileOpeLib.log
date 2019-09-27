@@ -1,0 +1,8 @@
+﻿  Folder.cpp
+c:\users\skittle\source\repos\fileopelib\fileopelib\folder.cpp(71): warning C4244: “参数”: 从“__int64”转换到“intptr_t”，可能丢失数据
+c:\users\skittle\source\repos\fileopelib\fileopelib\folder.cpp(72): warning C4244: “参数”: 从“__int64”转换到“intptr_t”，可能丢失数据
+c:\users\skittle\source\repos\fileopelib\fileopelib\folder.cpp(314): warning C4715: “Folder::SearchFolder”: 不是所有的控件路径都返回值
+c:\users\skittle\source\repos\fileopelib\fileopelib\folder.cpp(405): warning C4715: “Folder::AddFolder”: 不是所有的控件路径都返回值
+c:\users\skittle\source\repos\fileopelib\fileopelib\folder.cpp(365): warning C4715: “Folder::AddFile”: 不是所有的控件路径都返回值
+c:\users\skittle\source\repos\fileopelib\fileopelib\folder.cpp(271): warning C4715: “Folder::SearchFile”: 不是所有的控件路径都返回值
+  FileOpeLib.vcxproj -> C:\Users\skittle\source\repos\FileOpeLib\Debug\FileOpeLib.lib

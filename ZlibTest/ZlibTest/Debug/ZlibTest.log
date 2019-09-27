@@ -1,0 +1,5 @@
+﻿  源.cpp
+源.obj : error LNK2019: 无法解析的外部符号 _compress@16，该符号在函数 _main 中被引用
+源.obj : error LNK2019: 无法解析的外部符号 _uncompress@16，该符号在函数 _main 中被引用
+C:\Users\skittle\source\zlib-1.2.11\Lib Debug\zlibstat.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+C:\Users\skittle\source\repos\ZlibTest\Debug\ZlibTest.exe : fatal error LNK1120: 2 个无法解析的外部命令

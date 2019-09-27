@@ -1,0 +1,18 @@
+﻿  FileOpe.cpp
+c:\users\skittle\source\repos\testfileopr\testfileopr\fileope.cpp(171): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\skittle\source\repos\testfileopr\testfileopr\fileope.cpp(178): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\skittle\source\repos\testfileopr\testfileopr\fileope.cpp(185): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  Folder.cpp
+c:\users\skittle\source\repos\testfileopr\testfileopr\folder.cpp(31): warning C4244: “=”: 从“intptr_t”转换到“long”，可能丢失数据
+c:\users\skittle\source\repos\testfileopr\testfileopr\folder.cpp(192): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\skittle\source\repos\testfileopr\testfileopr\folder.cpp(231): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\skittle\source\repos\testfileopr\testfileopr\folder.cpp(282): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\skittle\source\repos\testfileopr\testfileopr\folder.cpp(310): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  main.cpp
+c:\users\skittle\source\repos\testfileopr\testfileopr\main.cpp(45): warning C4101: “_str”: 未引用的局部变量
+  正在生成代码...
+c:\users\skittle\source\repos\testfileopr\testfileopr\folder.cpp(211): warning C4715: “Folder::SearchFile”: 不是所有的控件路径都返回值
+c:\users\skittle\source\repos\testfileopr\testfileopr\folder.cpp(254): warning C4715: “Folder::SearchFolder”: 不是所有的控件路径都返回值
+c:\users\skittle\source\repos\testfileopr\testfileopr\folder.cpp(345): warning C4715: “Folder::AddFolder”: 不是所有的控件路径都返回值
+c:\users\skittle\source\repos\testfileopr\testfileopr\folder.cpp(305): warning C4715: “Folder::AddFile”: 不是所有的控件路径都返回值
+  TestFileOpr.vcxproj -> C:\Users\skittle\source\repos\TestFileOpr\x64\Debug\TestFileOpr.exe

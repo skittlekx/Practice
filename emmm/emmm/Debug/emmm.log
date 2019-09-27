@@ -1,0 +1,4 @@
+﻿  pch.cpp
+  emmm.cpp
+c:\users\skittle\source\repos\emmm\emmm\emmm.cpp(28): error C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1400): note: 参见“_vsnprintf”的声明

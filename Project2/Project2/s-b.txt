@@ -1,0 +1,76 @@
+-------------
+1 2 3 2 5 4 
+-------------
+left:1  right:17:mid:9
+Group1:1 2 3 2 sum:8
+Group2:5 4 sum:9
+本次划分：2组
+Visit:0 0 0 1 0 0 res:1 2 3 2 / 5 4
+缩小范围
+left:1  right:9:mid:5
+Group1:1 2 sum:3
+Group2:3 2 sum:5
+Group3:5 sum:5
+Group4:4 sum:4
+本次划分：4组
+Visit:0 1 0 1 1 0 res:1 2 / 3 2 / 5 / 4
+扩大范围
+left:6  right:9:mid:7
+Group1:1 2 3 sum:6
+Group2:2 5 sum:7
+Group3:4 sum:4
+本次划分：3组
+Visit:0 1 1 1 1 0 res:1 2 / 3 / 2 / 5 / 4
+缩小范围
+left:6  right:7:mid:6
+Group1:1 2 3 sum:6
+Group2:2 sum:2
+Group3:5 sum:5
+Group4:4 sum:4
+本次划分：4组
+Visit:0 1 1 1 1 0 res:1 2 / 3 / 2 / 5 / 4
+扩大范围
+Group1:1 2 3 sum:6
+Group2:2 5 sum:7
+Group3:4 sum:4
+本次划分：3组
+Visit:0 0 1 0 1 0 res:1 2 3 / 2 5 / 4
+Visit:0 0 1 0 1 0 res:1 2 3 / 2 5 / 4
+-------------
+4 5 2 3 2 1 
+-------------
+left:1  right:17:mid:9
+Group1:4 5 sum:9
+Group2:2 3 2 1 sum:8
+本次划分：2组
+Visit:0 1 0 0 0 0 res:4 5 / 2 3 2 1
+缩小范围
+left:1  right:9:mid:5
+Group1:4 sum:4
+Group2:5 sum:5
+Group3:2 3 sum:5
+Group4:2 1 sum:3
+本次划分：4组
+Visit:1 1 0 1 0 0 res:4 / 5 / 2 3 / 2 1
+扩大范围
+left:6  right:9:mid:7
+Group1:4 sum:4
+Group2:5 2 sum:7
+Group3:3 2 1 sum:6
+本次划分：3组
+Visit:1 1 1 1 0 0 res:4 / 5 / 2 / 3 / 2 1
+缩小范围
+left:6  right:7:mid:6
+Group1:4 sum:4
+Group2:5 sum:5
+Group3:2 3 sum:5
+Group4:2 1 sum:3
+本次划分：4组
+Visit:1 1 1 1 0 0 res:4 / 5 / 2 / 3 / 2 1
+扩大范围
+Group1:4 sum:4
+Group2:5 2 sum:7
+Group3:3 2 1 sum:6
+本次划分：3组
+Visit:1 0 1 0 0 0 res:4 / 5 2 / 3 2 1
+Visit:1 0 1 0 0 0 res:4 / 5 2 / 3 2 1

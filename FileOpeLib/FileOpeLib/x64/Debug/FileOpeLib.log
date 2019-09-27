@@ -1,0 +1,36 @@
+﻿zip.obj : warning LNK4006: zip_copyright 已在 zlibstat.lib(zip.obj) 中定义；已忽略第二个定义
+zip.obj : warning LNK4006: zipOpen 已在 zlibstat.lib(zip.obj) 中定义；已忽略第二个定义
+zip.obj : warning LNK4006: zipOpen2 已在 zlibstat.lib(zip.obj) 中定义；已忽略第二个定义
+zip.obj : warning LNK4006: zipOpenNewFileInZip 已在 zlibstat.lib(zip.obj) 中定义；已忽略第二个定义
+zip.obj : warning LNK4006: zipOpenNewFileInZip2 已在 zlibstat.lib(zip.obj) 中定义；已忽略第二个定义
+zip.obj : warning LNK4006: zipOpenNewFileInZip3 已在 zlibstat.lib(zip.obj) 中定义；已忽略第二个定义
+zip.obj : warning LNK4006: zipWriteInFileInZip 已在 zlibstat.lib(zip.obj) 中定义；已忽略第二个定义
+zip.obj : warning LNK4006: zipCloseFileInZip 已在 zlibstat.lib(zip.obj) 中定义；已忽略第二个定义
+zip.obj : warning LNK4006: zipCloseFileInZipRaw 已在 zlibstat.lib(zip.obj) 中定义；已忽略第二个定义
+zip.obj : warning LNK4006: zipClose 已在 zlibstat.lib(zip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unz_copyright 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzStringFileNameCompare 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzOpen 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzOpen2 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzClose 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzGetGlobalInfo 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzGetGlobalComment 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzGoToFirstFile 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzGoToNextFile 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzLocateFile 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzGetFilePos 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzGoToFilePos 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzGetCurrentFileInfo 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzOpenCurrentFile 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzOpenCurrentFilePassword 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzOpenCurrentFile2 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzOpenCurrentFile3 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzCloseCurrentFile 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzReadCurrentFile 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unztell 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzeof 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzGetLocalExtrafield 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzGetOffset 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4006: unzSetOffset 已在 zlibstat.lib(unzip.obj) 中定义；已忽略第二个定义
+unzip.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+  FileOpeLib.vcxproj -> C:\Users\skittle\source\repos\FileOpeLib\x64\Debug\FileOpeLib.lib

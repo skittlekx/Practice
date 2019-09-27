@@ -1,0 +1,5 @@
+﻿  Perceptron.cpp
+c:\users\skittle\source\repos\network\network\perceptron.cpp(20): warning C4244: “参数”: 从“long double”转换到“int”，可能丢失数据
+c:\users\skittle\source\repos\network\network\perceptron.cpp(21): warning C4244: “参数”: 从“long double”转换到“int”，可能丢失数据
+c:\users\skittle\source\repos\network\network\perceptron.cpp(23): warning C4244: “参数”: 从“long double”转换到“int”，可能丢失数据
+  NetWork.vcxproj -> C:\Users\skittle\source\repos\NetWork\Debug\NetWork.exe
