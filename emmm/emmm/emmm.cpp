@@ -46,8 +46,8 @@ bool dirExists(const std::string& dirName_in)
 }
 void cut()
 {
-	string path = "C:\\Users\\skittle\\Downloads\\ff.txt";
-	string root = "C:\\Users\\skittle\\Downloads\\233\\";
+	string path = "..\\..\\..\\ff.txt";
+	string root = "..\\..\\..\\233\\";
 	string target = root;
 	const string tag = "";
 	string txtIndex = format("%04d.txt", 0);
