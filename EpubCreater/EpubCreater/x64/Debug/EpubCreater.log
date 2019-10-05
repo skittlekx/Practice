@@ -1,2 +1,4 @@
-﻿  源.cpp
-  EpubCreater.vcxproj -> C:\Users\skittle\source\repos\EpubCreater\x64\Debug\EpubCreater.exe
+﻿  EpubCreater.cpp
+c:\users\skittle\source\repos\practice\epubcreater\epubcreater\epubcreater.cpp(124): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\skittle\source\repos\practice\epubcreater\epubcreater\epubcreater.cpp(145): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  EpubCreater.vcxproj -> C:\Users\skittle\source\repos\Practice\EpubCreater\x64\Debug\EpubCreater.exe

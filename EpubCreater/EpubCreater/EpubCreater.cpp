@@ -28,6 +28,46 @@ void EpubCreater::init(const char* name, const char* path)
 	m_EpubPath.init(str.c_str());
 	CreatBaseFile();
 }
+
+bool EpubCreater::AddFromLayeredTxts(const char* res) {
+	Folder Res;
+	if (!Folder::IsExitPath(res))
+	{
+		return false;
+	}
+	Res.init(res);
+	if (Res.getFolderCount() == 0 && Res.getFileCount() == 0)
+		return false;
+	int k = 0;
+	for (auto j = Res.getFirstFolder(); !Res.isEndFolder(); Res.getNextFolder(j))
+	{
+		int itag = 0;
+		for (auto i = j.getFirstFile(); !j.isEndFile(); j.getNextFile(i),++itag)
+		{
+			string str = i.getName();
+			string path = i.getPath();
+			string name = path + str;
+			string nName;
+			//string spinetext = str.substr(0, str.length() - 4);
+			char num[10];
+			sprintf_s(num, "%04d", k++);
+			nName.assign("Section").append(num).append(".xhtml");
+			string spinetext = _Txt2xHtml(name.c_str());
+			if (itag == 0) {
+				spinetext.insert(spinetext.begin(), 5, '*');
+			}
+			m_Spine.push_back(spinetext);
+			string xhtmlname = str.substr(0, str.find_last_of(".")).append(".xhtml");
+			m_O_Text._CreateFile(nName.c_str());
+			FileOpe tt = m_O_Text.FindFile(m_O_Text.SearchFile((m_O_Text.getPath() + "\\" + nName).c_str()));
+			tt.CopyFrom((path + xhtmlname).c_str());
+			FileOpe _tt((path + xhtmlname).c_str());
+			_tt.Delete();
+		}
+	}
+	return true;
+}
+
 bool EpubCreater::AddFromTxtsFolder(const char* res)
 {
 	Folder Res;
@@ -320,19 +360,36 @@ string EpubCreater::AddNcxMap()
 	string result(str_ncxmapHead);
 	if (m_O_Text.getFileCount() != 0)
 	{
-		string num,navstr,textstr,srcstr,tailstr;
+		string num,laynum,laystr,navstr,textstr,srcstr,tailstr;
 		int k = 0;
-		for (FileOpe i = m_O_Text.getFirstFile(); !m_O_Text.isEndFile(); m_O_Text.getNextFile(i))
+		int layercount = 0;
+		for (FileOpe i = m_O_Text.getFirstFile(); !m_O_Text.isEndFile(); m_O_Text.getNextFile(i),++k)
 		{
 			num = to_string(k);
 			string str = i.getName();
-			navstr.assign(_str_Ncx_navHead(num));
-			textstr.assign(_str_Ncx_Text(m_Spine[k++]));
 			srcstr.assign("Text/").append(str);
-			tailstr.assign(_str_Ncx_navTail(srcstr));
-			result.append("\n").append(navstr);
-			result.append("\n").append(textstr);
-			result.append("\n").append(tailstr);
+			if (m_Spine[k].find("*****") != -1) {
+				m_Spine[k].replace(0, 5, "");
+				char _num[10];
+				sprintf_s(_num, "%04d", layercount);
+				laynum.assign("volume").append(_num);
+				if (layercount++ != 0) {
+					result.append("\n").append(str_Ncx_Layer_Tail);
+				}
+				laystr.assign(_str_Ncx_Layer_Head(laynum, num, m_Spine[k],srcstr));
+				result.append("\n").append(laystr);
+			}
+			else {
+				navstr.assign(_str_Ncx_navHead(num));
+				textstr.assign(_str_Ncx_Text(m_Spine[k]));
+				tailstr.assign(_str_Ncx_navTail(srcstr));
+				result.append("\n").append(navstr);
+				result.append("\n").append(textstr);
+				result.append("\n").append(tailstr);
+			}
+		}
+		if (layercount != 0) {
+			result.append("\n").append(str_Ncx_Layer_Tail);
 		}
 	}
 	result.append("\n").append(str_ncxmapTail).append("\n");

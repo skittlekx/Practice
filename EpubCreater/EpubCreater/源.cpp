@@ -3,13 +3,13 @@
 using namespace std;
 void toEpub()
 {
-	const char* ResPath = "C:\\Users\\skittle\\Downloads\\233";
-	const char* AimPath = "C:\\Users\\skittle\\Downloads\\fan";
+	const char* ResPath = "..\\..\\..\\233";
+	const char* AimPath = "..\\..\\..\\fan";
 	Folder Res;
 	Res.init(ResPath);
 	METADATA md;
 	{
-		md.author = "ÌøÎè";
+		md.author = "·é»ðÏ·Öîºî";
 		md.ID = "123456";
 		md.creator = "skx";
 		md.date = "2019-9-9";
@@ -17,11 +17,11 @@ void toEpub()
 	}
 	//µ¥±¾
 	EpubCreater book;
-	string tName = "ÁÔ¹ú";
+	string tName = "Ñ©ÖÐº·µ¶ÐÐ";
 	md.title = tName;
 	cout << tName << "  Create.......";
 	book.init(tName.c_str(), AimPath);
-	book.AddFromTxtsFolder(Res.getPath().c_str());
+	book.AddFromLayeredTxts(Res.getPath().c_str());
 
 	book.SetMetaData(md);
 	book.WriteToEpub();

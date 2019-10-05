@@ -36,6 +36,8 @@ public:
 	void init(const char* name,const char* path);
 	bool AddFromTxtsFolder(const char*);
 
+	bool AddFromLayeredTxts(const char*);
+
 	void CreateContent();// , MANIFEST, SPINE);
 	void CreateNcx();
 	void CreatBaseFile();

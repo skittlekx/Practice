@@ -305,6 +305,12 @@ const char* str_Guid = "\
   <docTitle>\n\
     <text>" + X + "</text>\n\
   </docTitle>"
+#define _str_Ncx_Layer_Head(X,Y,Z,W) "<navPoint id=\""+X+"\" playOrder=\""+Y+"\">\n\
+  <navLabel>\n\
+    <text>" + Z + "</text>\n\
+  </navLabel>\n\
+  <content src = \"" + W + "\"/>"
+const char* str_Ncx_Layer_Tail = "</navPoint>";
 #define _str_Ncx_Text(X) "        <text>" + X + "</text>"
 #define _str_Ncx_Head(X) "  <head>\n" +X+"\n\
     <meta name=\"dtb:depth\" content=\"1\"/>\n\
